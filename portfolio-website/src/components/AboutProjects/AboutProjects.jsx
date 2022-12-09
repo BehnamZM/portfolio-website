@@ -33,6 +33,7 @@ const AboutProjectsSlider = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   
 
   @media screen and (max-width: 668px){
@@ -44,6 +45,7 @@ const SliderProjectInfos = styled.div`
   display: flex; 
   flex-direction: column;
   gap: 2rem;
+
 `
 
 const SliderProjectTitle = styled.h2`
@@ -56,6 +58,11 @@ const SliderProjectDes = styled.p`
 color: ${(props) => props.theme.colors.light};
 width: 70%;
 text-align: justify;
+
+@media screen and (min-width: 669px) and (max-width: 991px){
+  width: 100%;
+  font-size: 14px;
+}
 `
 
 const ProjectTecList = styled.ul`
@@ -69,6 +76,13 @@ align-items: center;
 gap: 5px;
 margin-top: 10px;
 font-size: 20px;
+
+@media screen and (min-width: 669px) and (max-width: 991px){
+  font-size: 10px;
+}
+`
+const SliderImageBox = styled.div`
+
 `
 
 const SliderImage = styled.img`
@@ -144,7 +158,10 @@ const AboutProjects = () => {
                     </ProjectTecListItem>
                   </ProjectTecList>
                 </SliderProjectInfos>
-                <SliderImage src={SliderImage1} />
+                <SliderImageBox>
+                  <SliderImage src={SliderImage1} />
+                </SliderImageBox>
+                
               </AboutProjectsSlider>
             </SwiperSlide>
 
@@ -196,7 +213,9 @@ const AboutProjects = () => {
                     </ProjectTecListItem>
                   </ProjectTecList>
                 </SliderProjectInfos>
-                <SliderImage src={SliderImage2} />
+                <SliderImageBox>
+                  <SliderImage src={SliderImage2} />
+                </SliderImageBox>
               </AboutProjectsSlider>
             </SwiperSlide>
 
@@ -238,9 +257,12 @@ const AboutProjects = () => {
                       <ProjectTecListItemIcon />
                       SWIPER
                     </ProjectTecListItem>
+                    
                   </ProjectTecList>
                 </SliderProjectInfos>
-                <SliderImage src={SliderImage3} />
+                <SliderImageBox>
+                  <SliderImage src={SliderImage3} />
+                </SliderImageBox>
               </AboutProjectsSlider>
             </SwiperSlide>
 
@@ -274,9 +296,15 @@ const AboutProjects = () => {
                       <ProjectTecListItemIcon />
                       AXIOS
                     </ProjectTecListItem>
+                    <ProjectTecListItem>
+                      <ProjectTecListItemIcon />
+                      MATERIAL UI
+                    </ProjectTecListItem>
                   </ProjectTecList>
                 </SliderProjectInfos>
-                <SliderImage src={SliderImage4} />
+                <SliderImageBox>
+                  <SliderImage src={SliderImage4} />
+                </SliderImageBox>
               </AboutProjectsSlider>
             </SwiperSlide>
 

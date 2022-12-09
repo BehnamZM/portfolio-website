@@ -60,7 +60,7 @@ html {
 
   @media screen and (max-width: 668px){
     *{
-      overflow-x: hidden;
+      /* overflow-x: auto; */
     }
   }
 `

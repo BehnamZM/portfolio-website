@@ -116,7 +116,7 @@ const About = () => {
               varient="primary"
               weight="900"
               sizeMobile="20px"
-              size="45px">توسعه دهنده فرانت اند هستم.</Introduction>
+              size="40px">توسعه دهنده فرانت اند هستم.</Introduction>
               <a href='../../assets/behnamzaremolaee.pdf' download>
               <AboutButton>دانلود رزومه</AboutButton>
               </a>
