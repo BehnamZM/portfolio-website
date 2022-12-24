@@ -92,7 +92,7 @@ const MobileNavbarItems = styled.ul`
   backdrop-filter: blur(5px);
   bottom: 3%;
   height: 60px;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -161,12 +161,12 @@ const Navbar = () => {
         </MobileNavbarItem>
         <MobileNavbarItem>
           <MobileNavbarLink href="#contact">
-            <HardSkillIcon />
+            <ContactIcon />
           </MobileNavbarLink>
         </MobileNavbarItem>
         <MobileNavbarItem>
           <MobileNavbarLink href="#hardskills">
-            <ContactIcon />
+            <HardSkillIcon />
           </MobileNavbarLink>
         </MobileNavbarItem>
       </MobileNavbarItems>

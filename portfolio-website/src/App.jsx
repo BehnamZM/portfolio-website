@@ -63,6 +63,19 @@ html {
       /* overflow-x: auto; */
     }
   }
+
+  ::-webkit-scrollbar-track {
+    background-color: #071828;
+   
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #fb3b64;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar {
+    background-color: #071828;
+    width: 10px;
+  }
 `
 
 const ModeControl = styled.img`
@@ -81,12 +94,12 @@ function App() {
   const [mode, setMode] = useState(false)
 
   return (
-    <ThemeProvider 
-    theme={mode ? darkTheme : lightTheme}>
+    <ThemeProvider
+      theme={mode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <div className="App">
-        <Navbar mode={mode} setMode={setMode}/>
-        <ModeControl 
+        <Navbar mode={mode} setMode={setMode} />
+        <ModeControl
           onClick={() => setMode(!mode)}
           src={mode ? LightModeLogo : DarkModeLogo} />
         <About />
